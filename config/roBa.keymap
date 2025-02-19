@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -46,19 +45,19 @@
 
         MOUSE {
             bindings = <
-&trans     &kp F3    &kp F7     &kp F10         &kp F11                                      &kp F3        &kp F7          &kp F10         &kp F11          &trans
-&trans     &kp F4    &trans     &kp LEFT_SHIFT  &kp LC(C)  &trans             &kp LS(LC(M))  &kp F4        &mkp MB1        &mkp MB3        &mkp MB2         &kp DELETE
-&trans     &trans    &trans     &kp RCTRL       &kp LC(V)  &kp ESCAPE         &kp LC(F)      &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp BACKSPACE
-&kp LCTRL  &kp LEFT  &kp RIGHT  &kp LEFT_SHIFT  &kp ENTER  &kp LS(LG(S))      &mkp MB4       &kp ENTER                                                      &trans
+&kp LC(Z)  &kp F3    &kp F7     &kp F10         &kp F11                                          &kp F3        &kp F7          &kp F10         &kp F11          &trans
+&kp LC(Y)  &kp F4    &trans     &kp LEFT_SHIFT  &kp LC(C)      &trans             &kp LS(LC(M))  &kp F4        &mkp MB1        &mkp MB3        &mkp MB2         &kp DELETE
+&trans     &trans    &trans     &kp RCTRL       &kp LC(V)      &kp LC(U)          &kp LC(F)      &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp BACKSPACE
+&kp LCTRL  &kp LEFT  &kp RIGHT  &kp LEFT_SHIFT  &kp LA(ENTER)  &kp LS(LG(S))      &mkp MB4       &kp ENTER                                                      &trans
             >;
         };
 
         OTHER {
             bindings = <
-&kp ESCAPE  &kt DELETE  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp F10     &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &trans             &trans       &trans        &trans        &trans        &trans        &trans
-&kp F11     &kp N0      &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp BACKSPACE      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&kp LCTRL   &kp LC(C)   &kp LC(V)     &kp LEFT_SHIFT  &trans        &kp ENTER          &trans       &trans                                                  &bt BT_CLR_ALL
+&kp F4     &mt PLUS MINUS  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F10    &kp PERIOD      &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &trans             &trans       &trans        &trans        &trans        &trans        &trans
+&kp F11    &kp N0          &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp BACKSPACE      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&kp LCTRL  &kp LC(C)       &kp LC(V)     &kp LEFT_SHIFT  &trans        &kp ENTER          &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
