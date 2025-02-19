@@ -45,9 +45,9 @@
 
         MOUSE {
             bindings = <
-&kp LC(Z)  &kp F3    &kp F7     &kp F10         &kp F11                                          &kp F3        &kp F7          &kp F10         &kp F11          &trans
-&kp LC(Y)  &kp F4    &trans     &kp LEFT_SHIFT  &kp LC(C)      &trans             &kp LS(LC(M))  &kp F4        &mkp MB1        &mkp MB3        &mkp MB2         &kp DELETE
-&trans     &trans    &trans     &kp RCTRL       &kp LC(V)      &kp LC(U)          &kp LC(F)      &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp BACKSPACE
+&kp LC(U)  &kp F3    &kp F7     &kp F10         &kp F11                                          &kp F3        &kp F7          &kp F10         &kp F11          &trans
+&kp LC(Z)  &kp F4    &trans     &kp LEFT_SHIFT  &kp LC(C)      &trans             &kp LS(LC(M))  &kp F4        &mkp MB1        &mkp MB3        &mkp MB2         &kp DELETE
+&kp LC(Y)  &trans    &trans     &kp RCTRL       &kp LC(V)      &kp DEL            &kp LC(F)      &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp BACKSPACE
 &kp LCTRL  &kp LEFT  &kp RIGHT  &kp LEFT_SHIFT  &kp LA(ENTER)  &kp LS(LG(S))      &mkp MB4       &kp ENTER                                                      &trans
             >;
         };
