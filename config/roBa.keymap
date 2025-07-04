@@ -25,10 +25,10 @@
             label = "ID";
         };
 
-        terace: terace {
+        PASS2: terace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_0 &kp NUMBER_0 &kp NUMBER_0>;
+            bindings = <&kp LS(R) &kp D &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_2 &kp NUMBER_2 &kp NUMBER_8 &kp NUMBER_0>;
             label = "TERACE";
         };
     };
@@ -67,19 +67,10 @@
 
         OTHER {
             bindings = <
-&trans  &trans  &trans  &trans   &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans   &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans   &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &terace  &PASS   &ID         &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &PASS2  &PASS   &ID         &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
